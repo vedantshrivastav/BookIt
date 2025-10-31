@@ -1,0 +1,1 @@
+{"root":["./src/index.ts","./src/db/config.ts","./src/db/models/booking.ts","./src/db/models/experience.ts","./src/db/models/promo.ts"],"version":"5.9.3"}
