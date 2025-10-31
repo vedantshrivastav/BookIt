@@ -35,7 +35,7 @@ const Checkout = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/experiences/promo/validate",
+        "https://bookit-1-10fj.onrender.com/api/experiences/promo/validate",
         { code: promoCode }
       );
 
@@ -72,7 +72,7 @@ const Checkout = () => {
 
       // Make booking API call
       const response = await axios.put(
-        `http://localhost:3000/api/experiences/${id}/book`,
+        `https://bookit-1-10fj.onrender.com/api/experiences/${id}/book`,
         {
           date: data.date,
           time: data.time,

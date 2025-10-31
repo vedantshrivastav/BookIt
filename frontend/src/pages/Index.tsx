@@ -12,7 +12,9 @@ const Index = () => {
   useEffect(() => {
     const fetchExperiences = async () => {
       try {
-        const res = await axios.get("http://localhost:3000/api/experiences"); // 🔗 replace with your actual backend URL
+        const res = await axios.get(
+          "https://bookit-1-10fj.onrender.com/api/experiences"
+        ); // 🔗 replace with your actual backend URL
         setExperiences(res.data);
       } catch (error) {
         console.error("Error fetching experiences ❌", error);

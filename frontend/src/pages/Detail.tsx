@@ -48,7 +48,9 @@ const Detail = () => {
 
     const fetchExperience = async () => {
       try {
-        const res = await fetch(`http://localhost:3000/api/experiences/${id}`);
+        const res = await fetch(
+          `https://bookit-1-10fj.onrender.com/api/experiences/${id}`
+        );
         const result = await res.json();
         setData(result);
 
