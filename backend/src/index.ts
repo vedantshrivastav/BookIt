@@ -4,7 +4,11 @@ import router from "./routes/route";
 import cors from 'cors'
 const app = express();
 app.use(express.json())
-app.use(cors())
+app.use(cors({
+  origin: ["https://book-9hivc8o1v-vedantshrivastavs-projects.vercel.app/"], // or "*" for testing
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}))
 //Routes
 app.use("/api/experiences",router)
 const PORT = 3000;
