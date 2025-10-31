@@ -5,7 +5,7 @@ import cors from 'cors'
 const app = express();
 app.use(express.json())
 app.use(cors({
-  origin: ["https://book-2r7pf0xdm-vedantshrivastavs-projects.vercel.app/"], // or "*" for testing
+  origin: ["https://book-it-pink.vercel.app/"], // or "*" for testing
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true
 }))
